@@ -1,0 +1,19 @@
+<html>
+<head>
+	<link rel="import" href="components.html" />
+</head>
+<body>
+	<my-element id="el" data="{}"></my-element>
+
+	<script>
+		document.addEventListener('polymer-ready', function() {
+			var x = {"title":"Cool Table", "results":[{"id":1, "name": "Item A", "action": "Action Foo"}, {"id":2, "name": "Item B", "action": "Action Bar"}, {"id":3, "name": "Item C", "action": "Action Baz"}]};
+
+			var el = document.getElementById('el');
+			el.data = x;
+		});
+	</script>
+
+
+</body>
+</html>
